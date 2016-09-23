@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Proposta PC</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_enviar">Enviar</string>
+
+    
+    <string name="text_view_pergunta">Selecione o sistema operacional desejado: </string>
+    <string name="text_view_pergunta_programas">Selecione os softwares desejados: </string>
+    
+    <string name="radio_button_windows_7">Windows 7</string>
+    <string name="radio_button_windows_8">Windows 8</string>
+    <string name="radio_button_linux">Linux</string>
+
+    <string name="check_box_office">Office 2010</string>
+    <string name="check_box_antivirus">Antivirus</string>
+    <string name="check_box_skype">Skype</string>
+    <string name="check_box_viber">Viber</string>
+    <string name="check_box_navegador_web">Navegador Web</string>
+    
+</resources>

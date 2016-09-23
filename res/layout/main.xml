@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_left" >
+
+    <TextView
+        android:id="@+id/text_view_sistema_operacional_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/padding_left"
+        android:text="@string/text_view_pergunta" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_sistema_operacinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_sistema_operacional_select"
+        android:contentDescription="@null" >
+
+        <RadioButton
+            android:id="@+id/radio_button_windows_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_windows_7" />
+
+        <RadioButton
+            android:id="@+id/radio_button_windows_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_windows_8" />
+
+        <RadioButton
+            android:id="@+id/radio_button_linux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_linux" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_programas_sected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group_sistema_operacinal"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/padding_left"
+        android:text="@string/text_view_pergunta_programas" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_programas_sected" >
+
+        <CheckBox
+            android:id="@+id/check_box_antivirus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_antivirus" />
+
+        <CheckBox
+            android:id="@+id/check_box_navegador_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_box_antivirus"
+            android:text="@string/check_box_navegador_web" />
+
+        <CheckBox
+            android:id="@+id/check_box_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_box_navegador_web"
+            android:text="@string/check_box_office" />
+
+        <CheckBox
+            android:id="@+id/check_box_skipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_box_office"
+            android:text="@string/check_box_skype" />
+
+        <CheckBox
+            android:id="@+id/check_box_viber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check_box_skipe"
+            android:text="@string/check_box_viber" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout_check_box"
+        android:text="@string/button_enviar" />
+
+</RelativeLayout>
